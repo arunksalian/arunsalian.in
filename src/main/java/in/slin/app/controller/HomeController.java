@@ -12,11 +12,11 @@ public class HomeController {
 
 	@RequestMapping(method=RequestMethod.GET)
 	public String getHome () {
-		return TOKEN_HOME;
+		return TOKEN_INDEX;
 	}
 	
 	@RequestMapping(value="/slin",method=RequestMethod.GET)
 	public String getIndex () {
-		return TOKEN_HOME;
+		return TOKEN_INDEX;
 	}
 }
