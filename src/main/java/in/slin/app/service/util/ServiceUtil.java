@@ -7,13 +7,22 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix="serviceUrl")
 public class ServiceUtil {
 
-	private String solarRise;
-
-	public String getSolarRise() {
-		return solarRise;
+	private String solarRiseAPI;
+	private String coordinateAPI;
+	
+	public String getSolarRiseAPI() {
+		return solarRiseAPI;
 	}
-
-	public void setSolarRise(String solarRise) {
-		this.solarRise = solarRise;
+	public void setSolarRiseAPI(String solarRiseAPI) {
+		this.solarRiseAPI = solarRiseAPI;
 	}
+	public String getCoordinateAPI() {
+		return coordinateAPI;
+	}
+	public void setCoordinateAPI(String coordinateAPI) {
+		this.coordinateAPI = coordinateAPI;
+	}
+	
+	
+	
 }

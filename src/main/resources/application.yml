@@ -1,2 +1,3 @@
 serviceUrl:
-	solarRise:"https://api.sunrise-sunset.org/json?lat={0}&lng={1}"
+	solarRiseAPI:"https://api.sunrise-sunset.org/json?lat={0}&lng={1}"
+	coordinateAPI:"http://maps.googleapis.com/maps/api/geocode/json?address={0}"
