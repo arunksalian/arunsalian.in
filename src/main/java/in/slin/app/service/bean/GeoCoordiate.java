@@ -12,6 +12,13 @@ public class GeoCoordiate implements Serializable {
 	private String longitude;
 	private String latitude;
 	
+	public GeoCoordiate () {}
+	public GeoCoordiate (Coordinate coordinate, String cityName) {
+		this.longitude = coordinate.getLongitude();
+		this.latitude = coordinate.getLatitude();
+		this.cityName = cityName;
+	}
+	
 	public String getCityName() {
 		return cityName;
 	}
@@ -31,5 +38,7 @@ public class GeoCoordiate implements Serializable {
 		this.latitude = latitude;
 	}
 
-	
+	public String toString () {
+		return longitude.concat(",").concat(latitude).concat(",").concat(cityName);
+	}
 }

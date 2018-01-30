@@ -12,6 +12,14 @@ public class Address implements Serializable {
 	private String stateName;
 	private String countryName;
 	
+	public Address () {}
+	
+	public Address (String cityName, String stateName, String countryName) {
+		this.cityName = cityName;
+		this.stateName = stateName;
+		this.countryName = countryName;
+	}
+	
 	public String getCityName() {
 		return cityName;
 	}

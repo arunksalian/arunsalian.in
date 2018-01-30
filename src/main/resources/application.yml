@@ -1,3 +1,11 @@
 serviceUrl:
-	solarRiseAPI:"https://api.sunrise-sunset.org/json?lat={0}&lng={1}"
-	coordinateAPI:"http://maps.googleapis.com/maps/api/geocode/json?address={0}"
+	solarRiseAPI:"https://api.sunrise-sunset.org/json?lat={0}&lng={1}&date={2}"
+	coordinateAPI:"https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCVx2kjqszSE4gzLgjwzmMV3dfr8-CQfIo&address={0}"
+	
+logging:
+  level:
+    org.springframework.web: ERROR
+    in.slin: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
