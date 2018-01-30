@@ -1,5 +1,7 @@
 package in.slin.app.core.data;
 
+
+
 public enum ZodiacEnum {
 	
 	ARIES ("Aries", "Maish", PlanetEnum.PLANET_MARS),
