@@ -1,0 +1,2 @@
+serviceUrl:
+	solarRise:"https://api.sunrise-sunset.org/json?lat={0}&lng={1}"
