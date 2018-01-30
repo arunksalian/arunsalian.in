@@ -36,7 +36,7 @@ public class SolarServiceImpl implements SolarService {
 		return googleResponse;
 	}
 	
-	
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
 	
 	public GeoCoordiate getGeoCoordinate(Address address) throws ServiceException {
 		String coordinateAPI = serviceUtil.getCoordinateAPI(); 
